@@ -1,18 +1,35 @@
 import * as React from 'react';
-
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-dimensions-util';
+import { useEffect, useState } from 'react';
+import {
+  fontSizeScale,
+  horizontalScale,
+  verticalScale,
+} from 'react-native-dimensions-util';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [color, setColor] = useState('#000000');
 
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setColor(
+        `#${Math.floor(Math.random() * 16777215)
+          .toString(16)
+          .padStart(6, '0')}`
+      );
+    }, 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <View style={{ ...styles.boxContainer, backgroundColor: color }}>
+        <Text style={styles.box}>Small Box</Text>
+      </View>
+      <View style={{ ...styles.boxContainer2, backgroundColor: color }}>
+        <Text style={styles.box}>Medium Box</Text>
+      </View>
     </View>
   );
 }
@@ -23,9 +40,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  boxContainer: {
+    width: horizontalScale(60),
+    height: verticalScale(60),
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: verticalScale(20),
+  },
+  boxContainer2: {
+    width: horizontalScale(80),
+    height: verticalScale(80),
+    marginVertical: verticalScale(40),
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+    textAlign: 'center',
+    fontSize: fontSizeScale(20),
+    color: '#fff',
   },
 });
