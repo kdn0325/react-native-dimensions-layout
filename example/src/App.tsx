@@ -6,6 +6,7 @@ import {
   horizontalScale,
   verticalScale,
 } from 'react-native-dimensions-util';
+import { heightPercentage, widthPercentage } from './util/responsiveSize';
 
 export default function App() {
   const [color, setColor] = useState('#000000');
@@ -41,11 +42,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   boxContainer: {
-    width: horizontalScale(60),
-    height: verticalScale(60),
+    width: widthPercentage(60),
+    height: heightPercentage(60),
     alignItems: 'center',
     justifyContent: 'center',
-    marginVertical: verticalScale(20),
   },
   boxContainer2: {
     width: horizontalScale(80),
