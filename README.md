@@ -1,6 +1,6 @@
-# react-native-dimensions-util
+# react-native-responsive-design
 
-react-native-dimensions-util
+react-native-responsive-design
 
 - As a React Native developer, we need to determine the size of components with different display sizes for each device using the app
 - Usually, when collaborating using Figma, calculating is annoying and there is a possibility of making mistakes. Even if it is modularized, it can be inaccurate sometimes. It is also difficult to cope with foldable phones or horizontal modes. And some components don't work with percentage
@@ -9,9 +9,9 @@ react-native-dimensions-util
 ## Installation
 
 ```sh
-npm install react-native-dimensions-util
+npm install react-native-responsive-design
 # or
-yarn add react-native-dimensions-util
+yarn add react-native-responsive-design
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ yarn add react-native-dimensions-util
 Calculates the percentage value of the width relative to the screen width.
 
 ```javascript
-import { widthPercentage } from 'react-native-dimensions-util';
+import { widthPercentage } from 'react-native-responsive-design';
 
 const screenWidth = 200; // Current screen width
 const widthInPercentage = widthPercentage(screenWidth);
@@ -37,7 +37,7 @@ Calculates the percentage value of the height relative to the screen height.
 Calculates the percentage value of the height relative to the screen height.
 
 ```javascript
-import { heightPercentage } from 'react-native-dimensions-util';
+import { heightPercentage } from 'react-native-responsive-design';
 
 const screenHeight = 400; // Current screen height
 const heightInPercentage = heightPercentage(screenHeight);
@@ -49,7 +49,7 @@ console.log(heightInPercentage); // Percentage value of the screen height
 Calculates the percentage value of the font size
 
 ```javascript
-import { fontPercentage } from 'react-native-dimensions-util';
+import { fontPercentage } from 'react-native-responsive-design';
 
 const fontSize = 20; // Font size
 const fontSizeInPercentage = fontPercentage(fontSize);
@@ -61,7 +61,7 @@ console.log(fontSizeInPercentage); // Percentage value of the font size
 Scales the value provided based on the horizontal size of the screen.
 
 ```javascript
-import { fontPercentage } from 'react-native-dimensions-util';
+import { fontPercentage } from 'react-native-responsive-design';
 
 const fontSize = 20; // Font size
 const fontSizeInPercentage = fontPercentage(fontSize);
@@ -72,7 +72,7 @@ console.log(fontSizeInPercentage); // Percentage value of the font size
 Scales the value provided based on the horizontal size of the screen.
 
 ```javascript
-import { horizontalScale, verticalScale } from 'react-native-dimensions-util';
+import { horizontalScale, verticalScale } from 'react-native-responsive-design';
 
 const widthValue = 100; // Value to scale horizontally
 const heightValue = 100; // Value to scale vertically

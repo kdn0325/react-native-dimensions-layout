@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-dimensions-util": ["./src/index"]
+      "react-native-responsive-design": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

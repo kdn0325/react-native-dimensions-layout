@@ -2,7 +2,7 @@ import {
   fontSizeScale,
   percentBaseHeight,
   percentBaseWidth,
-} from 'react-native-dimensions-util';
+} from 'react-native-responsive-design';
 
 // Screen size defined in your Figma design
 const FIGMA_WINDOW_WIDTH = 375;

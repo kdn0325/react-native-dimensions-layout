@@ -5,7 +5,7 @@ import {
   fontSizeScale,
   horizontalScale,
   verticalScale,
-} from 'react-native-dimensions-util';
+} from 'react-native-responsive-design';
 import { heightPercentage, widthPercentage } from './util/responsiveSize';
 
 export default function App() {
