@@ -1,7 +1,7 @@
 {
-  "name": "react-native-dimensions-util",
-  "version": "0.1.0",
-  "description": "react-native-dimensions-util",
+  "name": "react-native-responsive-design",
+  "version": "1.0.0",
+  "description": "react-native-responsive-design",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
@@ -26,7 +26,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-dimensions-util-example",
+    "example": "yarn workspace react-native-responsive-design-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -41,14 +41,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kdn0325/react-native-dimensions-util.git"
+    "url": "git+https://github.com/kdn0325/react-native-responsive-design.git"
   },
   "author": "kdn0325 <dn10003@gmail.com> (https://github.com/kdn0325)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kdn0325/react-native-dimensions-util/issues"
+    "url": "https://github.com/kdn0325/react-native-responsive-design/issues"
   },
-  "homepage": "https://github.com/kdn0325/react-native-dimensions-util#readme",
+  "homepage": "https://github.com/kdn0325/react-native-responsive-design#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
